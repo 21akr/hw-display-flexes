@@ -1,0 +1,845 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Dongle", sans-serif;
+  color: #000000;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Dongle&display=swap");
+
+/* MAIN DIV */
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 50px;
+  background: #e900ff;
+  border-radius: 6px;
+  border: 2px ridge black;
+}
+
+body {
+  background: #b310c3;
+}
+
+.sfl {
+  font-weight: bold;
+  margin-left: 30px;
+  width: 100%;
+  height: 100%;
+}
+
+.parent-of-main-parent {
+  display: flex;
+  margin: 50px 30px;
+}
+
+.main-parent-of-boxes {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 200px;
+}
+
+.default-margin {
+  margin-left: 120px;
+}
+
+.box-default {
+  margin-top: 12px;
+  display: flex;
+  border-radius: 5px;
+  width: 140px;
+  height: max-content;
+  background-color: #ffc600;
+}
+
+.default {
+  margin: 5px 0 5px 5px;
+  width: 18px;
+  height: 26px;
+  background-color: #d22779;
+  border-radius: 2.5px;
+}
+
+.description {
+  margin-top: 55px;
+}
+
+.spec {
+  margin-top: 80px;
+}
+
+/* .main-parent-content {
+} */
+
+/* DISPLAY-FLEX */
+.display-flex-title::after {
+  position: absolute;
+  left: 50px;
+  top: 118px;
+  display: block;
+  content: "1";
+  height: 30px;
+  width: 12px;
+  background: #eeeeee;
+}
+
+.df-parent {
+  margin-left: 180px;
+}
+
+.main-display-flex-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.df-jc-flex-box::after {
+  position: absolute;
+  display: block;
+  content: "flex";
+  top: 140px;
+  left: 630px;
+}
+
+.df-jc-inline-flex-box::after {
+  position: absolute;
+  display: block;
+  content: "inline-flex";
+  top: 185px;
+  left: 630px;
+}
+
+/* .df-jc-in-flex {
+}
+
+/* FLEX-DIRECTION */
+.flex-direction-row-title::after {
+  position: absolute;
+  left: 50px;
+  top: 314px;
+  display: block;
+  content: "2";
+  height: 30px;
+  width: 12px;
+  background: #eeeeee;
+}
+
+.fd-main-row-and-reverse-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-column-and-reverse-box {
+  margin-left: 120px;
+}
+
+.fd-row-reverse-box {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.fd-in-row-reverse {
+  margin-right: 5px;
+}
+.fd-column-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.fd-column-box::after {
+  position: absolute;
+  display: block;
+  content: "column";
+  top: 344.5px;
+  left: 900px;
+}
+
+.fd-column-reverse-box::after {
+  position: absolute;
+  display: block;
+  content: "column-reversed";
+  top: 401.5px;
+  left: 900px;
+}
+
+.fd-in-column {
+  margin: 3px 3px;
+}
+
+.fd-column-reverse-box {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.fd-size {
+  height: 10px;
+  width: 26px;
+}
+
+.fd-row-box::after {
+  position: absolute;
+  display: block;
+  content: "row";
+  top: 335px;
+  left: 630px;
+}
+
+.fd-row-reverse-box::after {
+  position: absolute;
+  display: block;
+  content: "row-reverse";
+  top: 405px;
+  left: 630px;
+}
+
+/* .fd-in-row {
+}
+
+.in-flex {
+} */
+
+/* .fd-in-column-reverse {
+} */
+
+/* FLEX-WRAP */
+.flex-wrap-title::after {
+  position: absolute;
+  left: 50px;
+  top: 534px;
+  display: block;
+  content: "3";
+  height: 30px;
+  width: 12px;
+  background: #eeeeee;
+}
+
+.fw-parent {
+  margin-left: 38px;
+}
+
+.main-wrap-and-nowrap-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.fw-wrap-box {
+  display: flex;
+  flex-flow: row wrap;
+}
+.fw-wrap-reverse-box {
+  display: flex;
+  flex-flow: wrap-reverse;
+}
+
+.square {
+  height: 16px;
+  width: 16px;
+}
+
+.fw-nowrap-box::after {
+  position: absolute;
+  display: block;
+  content: "nowrap";
+  top: 554px;
+  left: 630px;
+}
+
+.fw-wrap-box::after {
+  position: absolute;
+  display: block;
+  content: "wrap";
+  top: 604px;
+  left: 630px;
+}
+
+.main-wrap-reverse-box::after {
+  position: absolute;
+  display: block;
+  content: "wrap-reverse";
+  top: 565.5px;
+  left: 900px;
+}
+
+/* .nowrap {
+}
+
+.fw-nowrap {
+}
+
+/* .fw-wrap-reverse {
+} */
+
+/* JUSTIFY-CONTENT */
+.jc-parent {
+  margin-left: 140px;
+}
+.justify-content-title::after {
+  position: absolute;
+  left: 50px;
+  top: 745.5px;
+  display: block;
+  content: "4";
+  height: 30px;
+  width: 12px;
+  background: #eeeeee;
+}
+
+.jc-flex-end-box {
+  display: flex;
+  justify-content: end;
+}
+
+.jc-flex-end {
+  margin-right: 5px;
+}
+
+.jc-center-box {
+  display: flex;
+  justify-content: center;
+}
+
+.jc-space-between-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.jc-m {
+  margin-right: 5px;
+}
+
+.jc-space-around-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.jc-flex-start-box::after {
+  position: absolute;
+  display: block;
+  content: "flex-start";
+  top: 766px;
+  left: 630px;
+}
+
+.jc-flex-end-box::after {
+  position: absolute;
+  display: block;
+  content: "flex-end";
+  top: 814px;
+  left: 630px;
+}
+
+.jc-center-box::after {
+  position: absolute;
+  display: block;
+  content: "center";
+  top: 766px;
+  left: 900px;
+}
+
+.jc-space-between-box::after {
+  position: absolute;
+  display: block;
+  content: "space-between";
+  top: 816px;
+  left: 900px;
+}
+
+.jc-space-around-box::after {
+  position: absolute;
+  display: block;
+  content: "space-around";
+  top: 767px;
+  left: 1154px;
+}
+
+/* .main-space-around-box {
+} */
+
+/* .main-flex-start-and-end-box {
+}
+
+
+.jc-flex-start {
+}
+
+.main-center-and-space-between-box {
+}
+
+.jc-center {
+}
+
+.jc-space-around {
+}
+
+.jc-space-between {
+} */
+
+/* ALIGN-ITEMS */
+.ai-parent {
+  margin-left: 140px;
+}
+
+.align-items-title::after {
+  position: absolute;
+  left: 50px;
+  top: 941.5px;
+  display: block;
+  content: "5";
+  height: 30px;
+  width: 12px;
+  background: #eeeeee;
+}
+
+.ai-padding {
+  height: 38px;
+}
+
+.ai-flex-end-box {
+  display: flex;
+  align-items: end;
+}
+
+.ai-center-box {
+  display: flex;
+  align-items: center;
+}
+
+.ai-stretch-box::after {
+  position: absolute;
+  display: block;
+  content: "stretch";
+  top: 962px;
+  left: 630px;
+}
+
+.flex-start-box::after {
+  position: absolute;
+  display: block;
+  content: "flex-start";
+  top: 1015px;
+  left: 630px;
+}
+
+.ai-flex-end-box::after {
+  position: absolute;
+  display: block;
+  content: "flex-end";
+  top: 966px;
+  left: 900px;
+}
+
+.ai-center-box::after {
+  position: absolute;
+  display: block;
+  content: "center";
+  top: 1014px;
+  left: 900px;
+}
+
+/* .ai-flex-start {
+} */
+
+/* .ai-main-flex-start-and-stretch-box {
+}
+
+.ai-mainbaseline-box {
+}
+
+
+.ai-stretch {
+}
+
+
+/* .ai-main-flex-end-center-box {
+} */
+
+/* .ai-flex-end {
+}
+
+.ai-center {
+}
+
+.baseline-box {
+}
+
+.ai-baseline {
+} */
+
+/* ALIGN-CONTENT */
+.ac-parent {
+  margin-right: 127px;
+}
+
+.align-conent-title::after {
+  position: absolute;
+  left: 50px;
+  top: 1142.5px;
+  display: block;
+  content: "6";
+  height: 30px;
+  width: 12px;
+  background: #eeeeeeff;
+}
+
+.ac-stretch-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+.ac-size {
+  height: 6px;
+  width: 16px;
+}
+
+.ac-sizex {
+  height: 7px;
+  width: 12px;
+}
+
+.ac-flex-start-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.ac-flex-end-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+
+.ac-center-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.ac-space-betwee-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.ac-space-around-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+.ac-stretch-box::after {
+  position: absolute;
+  display: block;
+  content: "stretch";
+  top: 1162px;
+  left: 630px;
+}
+
+.ac-flex-start-box::after {
+  position: absolute;
+  display: block;
+  content: "flex-start";
+  top: 1214px;
+  left: 630px;
+}
+
+.baseline-box::after {
+  position: absolute;
+  display: block;
+  content: "baseline";
+  top: 964px;
+  left: 1154px;
+}
+
+.small, .square-1 {
+  display: flex;
+  align-items: center;
+}
+
+.smol {
+  height: 10px;
+  width: 16px;
+}
+
+.square-2 {
+  display: flex;
+  align-items: flex-end;
+}
+
+.tall-1 {
+  height: 30px;
+  width: 16px;
+}
+
+.ac-flex-end-box::after {
+  position: absolute;
+  display: block;
+  content: "flex-end";
+  top: 1166px;
+  left: 893px;
+}
+
+.ac-center-box::after {
+  position: absolute;
+  display: block;
+  content: "center";
+  top: 1216px;
+  left: 893px;
+}
+
+.ac-space-betwee-box::after {
+  position: absolute;
+  display: block;
+  content: "space-between";
+  top: 1166px;
+  left: 1154px;
+}
+
+.ac-space-around-box::after {
+  position: absolute;
+  display: block;
+  content: "space-around";
+  top: 1216px;
+  left: 1154px;
+}
+
+/* .ac-main-stretch-and-flex-start-box {
+} */
+
+/* .ac-flex-and {
+} */
+
+/* .ac-space-between {
+} */
+
+/* .main-space-between-and-space-around-box {
+} */
+
+/* .ac-stretch {
+} */
+
+/* .ac-center {
+} */
+
+/* .ac-space-around {
+}
+
+.ac-flex-start {
+}
+
+.ac-main-flex-end-and-center-box {
+} */
+
+/* ORDERS */
+.order-parent {
+  margin-left: 64px;
+}
+
+.order-title::after {
+  position: absolute;
+  left: 50px;
+  top: 1380.5px;
+  display: block;
+  content: "1";
+  height: 30px;
+  width: 12px;
+  background: #eeeeee;
+}
+
+.order-box::before {
+  position: absolute;
+  display: block;
+  content: "order: 0";
+  top: 1380px;
+  left: 493px;
+  font-size: 10px;
+}
+
+.order-box::after {
+  position: absolute;
+  display: block;
+  content: "order: 1";
+  top: 1380px;
+  left: 558px;
+  font-size: 10px;
+}
+
+.order::before {
+  position: absolute;
+  display: block;
+  content: "order: -1";
+  top: 1438px;
+  left: 479px;
+  font-size: 10px;
+}
+
+.order::after {
+  position: absolute;
+  display: block;
+  content: "order: 0";
+  top: 1438px;
+  left: 534px;
+  font-size: 10px;
+}
+
+.main-order-box::after {
+  position: absolute;
+  display: block;
+  content: "order: 2";
+  top: 1438px;
+  left: 583px;
+  font-size: 10px;
+}
+
+/* .title-flex-element-br {
+} */
+
+/* FLEX-GROW */
+.flex-grow-title::after {
+  position: absolute;
+  left: 50px;
+  top: 1566.5px;
+  display: block;
+  content: "2";
+  height: 30px;
+  width: 12px;
+  background: #eeeeee;
+}
+.main-flex-grow-box {
+  margin-left: -120px;
+  display: flex;
+  justify-content: space-between;
+  width: 406px;
+}
+.three {
+  flex-grow: 1;
+}
+
+.first-flex-grow-box::after {
+  position: absolute;
+  display: block;
+  content: "flex-grow: 1";
+  top: 1650px;
+  left: 524px;
+  font-size: 10px;
+}
+
+.second-flex-grow-box::before {
+  position: absolute;
+  display: block;
+  content: "flex-grow: 3";
+  top: 1650px;
+  left: 795px;
+  font-size: 10px;
+}
+
+/* FLEX-SHRINK */
+.flex-shrink-title::after {
+  position: absolute;
+  left: 50px;
+  top: 1741.5px;
+  display: block;
+  content: "3";
+  height: 30px;
+  width: 12px;
+  background: #eeeeee;
+}
+.main-flex-shrink-box {
+  margin-left: -104px;
+  display: flex;
+  justify-content: space-between;
+  width: 406px;
+}
+
+.first-flex-shrink-box::after {
+  position: absolute;
+  display: block;
+  content: "flex-shrink: 1";
+  top: 1844px;
+  left: 524px;
+  font-size: 10px;
+}
+
+.first-flex-shrink-box::before {
+  position: absolute;
+  display: block;
+  content: "flex-shrink: 1";
+  top: 1844px;
+  left: 790px;
+  font-size: 10px;
+}
+
+.flex-shrink:nth-of-type(3) {
+  flex-shrink: 2;
+}
+
+/* FLEX-BASIS */
+.flex-basis-title::after {
+  position: absolute;
+  left: 50px;
+  top: 1917.5px;
+  display: block;
+  content: "4";
+  height: 30px;
+  width: 12px;
+  background: #eeeeee;
+}
+.main-flex-basis-box {
+  margin-left: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 406px;
+}
+.first-flex-basis-box::after {
+  position: absolute;
+  display: block;
+  content: "flex-basis: auto";
+  top: 2034px;
+  left: 520px;
+  font-size: 10px;
+}
+
+.second-flex-grow-box::after {
+  position: absolute;
+  display: block;
+  content: "flex-basis: 240px";
+  top: 2034px;
+  left: 780px;
+  font-size: 10px;
+}
+
+.duo {
+  flex-basis: 38px;
+}
+
+/* .flex-basis {
+} */
+
+/* ALIGN-SELF */
+.align-self-title::after {
+  position: absolute;
+  left: 50px;
+  top: 2094px;
+  display: block;
+  content: "5";
+  height: 30px;
+  width: 12px;
+  background: #eeeeee;
+}
+
+.main-align-self-box {
+  margin-left: -80px;
+  display: flex;
+  justify-content: space-between;
+  width: 406px;
+}
+.align-self-box::after {
+  position: absolute;
+  display: block;
+  content: "align-self: auto";
+  top: 2222px;
+  left: 520px;
+  font-size: 10px;
+}
+
+/* .align-self {
+} */

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fucking flexes</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <!--     !     -->
+    <!-- THE MAIN DIV  -->
+    <div class="main">
+      <div class="sfl title-flex-container-br">СВОЙСТВА FLEX-КОНТЕЙНЕРА</div>
+
+      <!-- DISPLAY-FLEX -->
+      <div class="parent-of-main-parent">
+        <div class="main-parent-content">
+          <div class="display-flex-title">display-flex;</div>
+          <div class="description">Запускается работа с FlexBox</div>
+        </div>
+
+        <!-- BOXES -->
+        <div class="df-parent main-parent-of-boxes">
+          <div class="main-display-flex-box">
+            <div class="box-default df-jc-flex-box">
+              <div class="default df-jc-in-flex"></div>
+              <div class="default df-jc-in-flex"></div>
+              <div class="default df-jc-in-flex"></div>
+            </div>
+            <div class="box-default df-jc-inline-flex-box">
+              <div class="default df-jc-in-flex"></div>
+              <div class="default df-jc-in-flex"></div>
+              <div class="default df-jc-in-flex"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FLEX-DIRECTION-ROW -->
+      <div class="parent-of-main-parent">
+        <div class="main-parent-content">
+          <div class="flex-direction-row-title">flex-direction: row;</div>
+          <div class="description spec">Изменение оси элементов</div>
+        </div>
+
+        <!-- BOXES -->
+        <div class="main-parent-of-boxes">
+          <div class="fd-main-row-and-reverse-box">
+            <div class="box-default fd-row-box">
+              <div class="default fd-in-row in-flex"></div>
+              <div class="default fd-in-row in-flex"></div>
+              <div class="default fd-in-row in-flex"></div>
+            </div>
+            <div class="box-default fd-row-reverse-box">
+              <div class="default fd-in-row-reverse"></div>
+              <div class="default fd-in-row-reverse"></div>
+              <div class="default fd-in-row-reverse"></div>
+            </div>
+          </div>
+          <div class="default-margin main-column-and-reverse-box">
+            <div class="box-default fd-column-box">
+              <div class="default fd-size fd-in-column"></div>
+              <div class="default fd-size fd-in-column"></div>
+              <div class="default fd-size fd-in-column"></div>
+            </div>
+            <div class="box-default fd-column-reverse-box">
+              <div
+                class="default fd-size fd-in-column-reverse fd-in-column"
+              ></div>
+              <div
+                class="default fd-size fd-in-column-reverse fd-in-column"
+              ></div>
+              <div
+                class="default fd-size fd-in-column-reverse fd-in-column"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FLEX-WRAP -->
+      <div class="parent-of-main-parent">
+        <div class="main-parent-content">
+          <div class="flex-wrap-title">flex-wrap: nowrap;</div>
+          <div class="description">
+            Отношение элементов в одну или другие строки
+          </div>
+        </div>
+
+        <!-- BOXES -->
+        <div class="fw-parent main-parent-of-boxes">
+          <div class="main-wrap-and-nowrap-box">
+            <div class="box-default fw-nowrap-box">
+              <div class="nowrap"></div>
+              <div class="default fw-nowrap"></div>
+              <div class="default fw-nowrap"></div>
+              <div class="default fw-nowrap"></div>
+              <div class="default fw-nowrap"></div>
+              <div class="default fw-nowrap"></div>
+            </div>
+            <div class="box-default fw-wrap-box">
+              <div class="default square fw-wrap"></div>
+              <div class="default square fw-wrap"></div>
+              <div class="default square fw-wrap"></div>
+              <div class="default square fw-wrap"></div>
+              <div class="default square fw-wrap"></div>
+              <div class="default square fw-wrap"></div>
+              <div class="default square fw-wrap"></div>
+              <div class="default square fw-wrap"></div>
+              <div class="default square fw-wrap"></div>
+            </div>
+          </div>
+          <div class="default-margin main-wrap-reverse-box">
+            <div class="box-default fw-wrap-reverse-box">
+              <div class="default square fw-wrap-reverse"></div>
+              <div class="default square fw-wrap-reverse"></div>
+              <div class="default square fw-wrap-reverse"></div>
+              <div class="default square fw-wrap-reverse"></div>
+              <div class="default square fw-wrap-reverse"></div>
+              <div class="default square fw-wrap-reverse"></div>
+              <div class="default square fw-wrap-reverse"></div>
+              <div class="default square fw-wrap-reverse"></div>
+              <div class="default square fw-wrap-reverse"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- JUSTIFY-CONTENT -->
+      <div class="parent-of-main-parent">
+        <div class="main-parent-content">
+          <div class="justify-content-title">justify-content: flex-start;</div>
+          <div class="description">Расположение элементов по оси X</div>
+        </div>
+
+        <!-- BOXES -->
+        <div class="jc-parent main-parent-of-boxes">
+          <div class="main-flex-start-and-end-box">
+            <div class="box-default jc-flex-start-box">
+              <div class="default jc-flex-start"></div>
+              <div class="default jc-flex-start"></div>
+              <div class="default jc-flex-start"></div>
+            </div>
+            <div class="box-default jc-flex-end-box">
+              <div class="default jc-flex-end"></div>
+              <div class="default jc-flex-end"></div>
+              <div class="default jc-flex-end"></div>
+            </div>
+          </div>
+          <div class="default-margin main-center-and-space-between-box">
+            <div class="box-default jc-center-box">
+              <div class="default jc-center"></div>
+              <div class="default jc-center"></div>
+              <div class="default jc-center"></div>
+            </div>
+            <div class="box-default jc-space-between-box">
+              <div class="default jc-space-between"></div>
+              <div class="default jc-space-between"></div>
+              <div class="default jc-space-between"></div>
+              <div class="default jc-space-between"></div>
+              <div class="default jc-space-between jc-m"></div>
+            </div>
+          </div>
+          <div class="default-margin main-space-around-box">
+            <div class="box-default jc-space-around-box">
+              <div class="default jc-space-between jc-space-around"></div>
+              <div class="default jc-space-between jc-space-around"></div>
+              <div class="default jc-space-between jc-space-around"></div>
+              <div class="default jc-space-between jc-space-around"></div>
+              <div class="default jc-space-between jc-space-around"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ALIGN-ITEMS -->
+      <div class="parent-of-main-parent">
+        <div class="main-parent-content">
+          <div class="align-items-title">align-items: stretch;</div>
+          <div class="description">Расположение элементов по оси Y</div>
+        </div>
+
+        <!-- BOXES  -->
+        <div class="ai-parent main-parent-of-boxes">
+          <div class="ai-main-flex-start-and-stretch-box">
+            <div class="box-default ai-stretch-box">
+              <div class="default ai-stretch"></div>
+              <div class="default ai-stretch"></div>
+              <div class="default ai-stretch"></div>
+            </div>
+            <div class="ai-padding box-default flex-start-box">
+              <div class="default square ai-flex-start"></div>
+              <div class="default square ai-flex-start"></div>
+              <div class="default square ai-flex-start"></div>
+            </div>
+          </div>
+          <div class="default-margin ai-main-flex-end-center-box">
+            <div class="ai-padding box-default ai-flex-end-box">
+              <div class="default square ai-flex-end"></div>
+              <div class="default square ai-flex-end"></div>
+              <div class="default square ai-flex-end"></div>
+            </div>
+            <div class="ai-padding box-default ai-center-box">
+              <div class="default square ai-center"></div>
+              <div class="default square ai-center"></div>
+              <div class="default square ai-center"></div>
+            </div>
+          </div>
+          <div class="default-margin ai-mainbaseline-box">
+            <div class="ai-padding box-default baseline-box">
+              <div class="small">
+                <div class="default ai-baseline smol"></div>
+              </div>
+              <div class="square-1">
+                <div class="default ai-baseline square"></div>
+              </div>
+              <div class="tall">
+                <div class="default ai-baseline tall-1"></div>
+              </div>
+              <div class="square-2">
+                <div class="square default ai-baseline"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ALIGN-CONTENT -->
+      <div class="parent-of-main-parent">
+        <div class="main-parent-content">
+          <div class="align-conent-title">align-conent: stretch;</div>
+          <div class="description">
+            то же самое, что и align-items, только тут выравнивает строки
+          </div>
+        </div>
+
+        <!-- BOXES -->
+        <div class="ac-parent main-parent-of-boxes">
+          <div class="ac-main-stretch-and-flex-start-box">
+            <div class="ai-padding box-default ac-stretch-box">
+              <div class="default ac-size ac-stretch"></div>
+              <div class="default ac-size ac-stretch"></div>
+              <div class="default ac-size ac-stretch"></div>
+              <div class="default ac-size ac-stretch"></div>
+              <div class="default ac-size ac-stretch"></div>
+              <div class="default ac-size ac-stretch"></div>
+              <div class="default ac-size ac-stretch"></div>
+              <div class="default ac-size ac-stretch"></div>
+              <div class="default ac-size ac-stretch"></div>
+            </div>
+            <div class="ai-padding box-default ac-flex-start-box">
+              <div class="default ac-size ac-flex-start"></div>
+              <div class="default ac-size ac-flex-start"></div>
+              <div class="default ac-size ac-flex-start"></div>
+              <div class="default ac-size ac-flex-start"></div>
+              <div class="default ac-size ac-flex-start"></div>
+              <div class="default ac-size ac-flex-start"></div>
+              <div class="default ac-size ac-flex-start"></div>
+              <div class="default ac-size ac-flex-start"></div>
+              <div class="default ac-size ac-flex-start"></div>
+              <div class="default ac-size ac-flex-start"></div>
+            </div>
+          </div>
+          <div class="default-margin ac-main-flex-end-and-center-box">
+            <div class="ai-padding box-default ac-flex-end-box">
+              <div class="default ac-size ac-flex-and"></div>
+              <div class="default ac-size ac-flex-and"></div>
+              <div class="default ac-size ac-flex-and"></div>
+              <div class="default ac-size ac-flex-and"></div>
+              <div class="default ac-size ac-flex-and"></div>
+              <div class="default ac-size ac-flex-and"></div>
+              <div class="default ac-size ac-flex-and"></div>
+              <div class="default ac-size ac-flex-and"></div>
+              <div class="default ac-size ac-flex-and"></div>
+              <div class="default ac-size ac-flex-and"></div>
+            </div>
+            <div class="ai-padding box-default ac-center-box">
+              <div class="default ac-size ac-center"></div>
+              <div class="default ac-size ac-center"></div>
+              <div class="default ac-size ac-center"></div>
+              <div class="default ac-size ac-center"></div>
+              <div class="default ac-size ac-center"></div>
+              <div class="default ac-size ac-center"></div>
+              <div class="default ac-size ac-center"></div>
+              <div class="default ac-size ac-center"></div>
+              <div class="default ac-size ac-center"></div>
+              <div class="default ac-size ac-center"></div>
+            </div>
+          </div>
+          <div class="default-margin main-space-between-and-space-around-box">
+            <divx class="ai-padding box-default ac-space-betwee-box">
+              <div class="default ac-sizex ac-space-between"></div>
+              <div class="default ac-sizex ac-space-between"></div>
+              <div class="default ac-sizex ac-space-between"></div>
+              <div class="default ac-sizex ac-space-between"></div>
+              <div class="default ac-sizex ac-space-between"></div>
+              <div class="default ac-sizex ac-space-between"></div>
+              <div class="default ac-sizex ac-space-between"></div>
+              <div class="default ac-sizex ac-space-between"></div>
+              <div class="default ac-sizex ac-space-between"></div>
+              <div class="default ac-sizex ac-space-between"></div>
+              <div class="default ac-sizex ac-space-between"></div>
+              <div class="default ac-sizex ac-space-between"></div>
+              <div class="default ac-sizex ac-space-between"></div>
+              <div class="default ac-sizex ac-space-between"></div>
+              <div class="default ac-sizex ac-space-between"></div>
+              <div class="default ac-sizex ac-space-between"></div>
+            </divx>
+            <div class="ai-padding box-default ac-space-around-box">
+              <div class="default ac-sizex ac-space-around"></div>
+              <div class="default ac-sizex ac-space-around"></div>
+              <div class="default ac-sizex ac-space-around"></div>
+              <div class="default ac-sizex ac-space-around"></div>
+              <div class="default ac-sizex ac-space-around"></div>
+              <div class="default ac-sizex ac-space-around"></div>
+              <div class="default ac-sizex ac-space-around"></div>
+              <div class="default ac-sizex ac-space-around"></div>
+              <div class="default ac-sizex ac-space-around"></div>
+              <div class="default ac-sizex ac-space-around"></div>
+              <div class="default ac-sizex ac-space-around"></div>
+              <div class="default ac-sizex ac-space-around"></div>
+              <div class="default ac-sizex ac-space-around"></div>
+              <div class="default ac-sizex ac-space-around"></div>
+              <div class="default ac-sizex ac-space-around"></div>
+              <div class="default ac-sizex ac-space-around"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sfl title-flex-element-br">СВОЙСТВА FLEX-ЭЛЕМЕНТА</div>
+
+      <!-- ORDER -->
+      <div class="parent-of-main-parent">
+        <div class="main-parent-content">
+          <div class="order-title">order: 0;</div>
+          <div class="description">
+            Устанавливает порядочность flex-элементам
+            <p>и определяет их</p>
+          </div>
+        </div>
+
+        <!-- BOXES -->
+        <div class="order-parent main-parent-of-boxes">
+          <div class="main-order-box">
+            <div class="box-default order-box">
+              <div class="default order"></div>
+              <div class="default order"></div>
+              <div class="default order"></div>
+              <div class="default order"></div>
+              <div class="default order"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FLEX-GROW -->
+      <div class="parent-of-main-parent">
+        <div class="main-parent-content">
+          <div class="flex-grow-title">flex-grow:0;</div>
+          <div class="description">
+            указывает на элемент, который растянется
+          </div>
+        </div>
+
+        <!-- BOXES -->
+        <div class="main-parent-of-boxes">
+          <div class="main-flex-grow-box">
+            <div class="box-default first-flex-grow-box">
+              <div class="default flex-grow"></div>
+              <div class="default flex-grow"></div>
+              <div class="default flex-grow"></div>
+              <div class="default flex-grow"></div>
+              <div class="default flex-grow"></div>
+            </div>
+            <div class="box-default second-flex-grow-box">
+              <div class="default flex-grow one"></div>
+              <div class="default flex-grow two"></div>
+              <div class="default flex-grow three"></div>
+              <div class="default flex-grow four"></div>
+              <div class="default flex-grow five"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FLEX-SHRINK -->
+      <div class="parent-of-main-parent">
+        <div class="main-parent-content">
+          <div class="flex-shrink-title">flex-shrink: 1;</div>
+          <div class="description">указывает на элемент, который сужается</div>
+        </div>
+
+        <!-- BOXES -->
+        <div class="main-parent-of-boxes">
+          <div class="main-flex-shrink-box">
+            <div class="box-default first-flex-shrink-box">
+              <div class="default flex-shrink1"></div>
+              <div class="default flex-shrink1"></div>
+              <div class="default flex-shrink1"></div>
+              <div class="default flex-shrink1"></div>
+              <div class="default flex-shrink1"></div>
+            </div>
+            <div class="box-default second-flex-shrink-box">
+              <div class="default flex-shrink"></div>
+              <div class="default flex-shrink"></div>
+              <div class="default flex-shrink"></div>
+              <div class="default flex-shrink"></div>
+              <div class="default flex-shrink"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FLEX-BASIS -->
+      <div class="parent-of-main-parent">
+        <div class="main-parent-content">
+          <div class="flex-basis-title">flex-basis: auto;</div>
+          <div class="description">Указывает .. не понял</div>
+        </div>
+
+        <!-- BOXES -->
+        <div class="main-parent-of-boxes">
+          <div class="main-flex-basis-box">
+            <div class="box-default first-flex-basis-box">
+              <div class="default flex-basis"></div>
+              <div class="default flex-basis"></div>
+              <div class="default flex-basis"></div>
+              <div class="default flex-basis"></div>
+              <div class="default flex-basis"></div>
+            </div>
+            <div class="box-default second-flex-basis-box">
+              <div class="default flex-basis"></div>
+              <div class="default flex-basis duo"></div>
+              <div class="default flex-basis"></div>
+              <div class="default flex-basis"></div>
+              <div class="default flex-basis"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ALIGN-SELF -->
+      <div class="parent-of-main-parent">
+        <div class="main-parent-content">
+          <div class="align-self-title">align-self: auto;</div>
+          <div class="description">выравнивает элемент по умолчанию?</div>
+        </div>
+
+        <!-- BOXES -->
+        <div class="main-parent-of-boxes">
+          <div class="main-align-self-box">
+            <div class="box-default align-self-box">
+              <div class="default align-self"></div>
+              <div class="default align-self"></div>
+              <div class="default align-self"></div>
+              <div class="default align-self"></div>
+              <div class="default align-self"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
